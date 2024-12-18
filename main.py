@@ -11,8 +11,7 @@ def generate_report(word_count, chars_list, path):
     print(f"{word_count} words found in the document")
     print("\n")
     for char in chars_list:
-        letter = char["letter"]
-        count = char["count"]
+        count, letter = char.values()
         print(f"The '{letter}' character was found {count} times")
     print("--- End report ---")
 
